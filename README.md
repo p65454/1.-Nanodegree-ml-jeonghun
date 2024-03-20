@@ -54,9 +54,9 @@
   3. 접속이 됐다면 이제 Linux가 된거고 `cd ~/.ssh` -> `cat authorized_keys` 로 등록된 ssh키 확인 가능
 
 
+----------------------------------------
 
-
-## 2. 파이썬 환경 셋팅
+## 2. 파이썬 환경 세팅
 
   1. vscode 좌측 원격탐색기 - SSH 옆 + 클릭 - `ssh -i C:/Users/jeonghun/first-ssh-key(공개키의 위치) ubuntu@xxx.xxx.xxx.xxx(외부ip)` - /{홈 경로}/.ssh/config 로 설정
 
