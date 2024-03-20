@@ -37,14 +37,22 @@
   -> 공개키를 서버에 등록해야함
   
   1. window 키 등록 명령어 : `ssh-keygen -t rsa -f C:\Users\{사용자명}\.ssh\{파일명} -C {코멘트} -b 2048`
+   
   2. 키파일 있는 곳으로 이동 : `cd {키파일 위치}`
+   
   3. 퍼블릭 키 출력해서 확인 : `cat {키파일명.pub}`
+   
   4. 암호 복사한 다음 Compute Engine - 설정 - 메타데이터 - SSH키 - 항목추가 에 붙여넣기
+
+
     
   ### :pushpin: SSH 접속
   1. VM인스턴스 탭에서 외부IP 복사
+   
   2. `ssh -i C:/Users/jeonghun/first-ssh-key(공개키의 위치) ubuntu@xxx.xxx.xxx.xxx(외부ip)`
+   
   3. 접속이 됐다면 이제 Linux가 된거고 `cd ~/.ssh` -> `cat authorized_keys` 로 등록된 ssh키 확인 가능
+
 
 
 
@@ -65,6 +73,12 @@
    
   6. **You can undo this by running `conda init --reverse $SHELL? [yes no]**
       -> 아나콘다를 자동으로 활성화 할건지? yes 하면 기본 파이썬이 이번 설치한 아나콘다 환경으로 세팅됨. yes
+
+  7. 껐다 키면 활성화 된다. `exit` 후 `Ctrl + J` 하자
+    
+  8. mle_course 라는 가상환경 만들기 :  `conda create --name mle_course python=3.11`
+
+  9. 가상환경 활성화 : `conda activate mle_course`
      
     
   
