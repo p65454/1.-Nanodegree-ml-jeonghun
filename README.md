@@ -50,6 +50,14 @@
 ## 2. 파이썬 환경 셋팅
   1. miniconda 설치하기 <https://docs.anaconda.com/free/miniconda/>     
      접속 후 **Linux Miniconda3 Linux 64-bit** 마우스 우클릭 후 링크 복사    
-  2. 터미널 창에 `wget {링크}` 하면 설치됨
+  2. vs code 에서 'Ctrl + J' 해서 터미널창 킨 후 `wget {링크}` 입력하면 설치된다
+  3. `bash ./Miniconda3-latest-Linux-x86_64.sh`
+      -> bashell 쉘을 켜서 뒤의 프로그램을 실행시키는 명령어 (맨 앞의 .은 현재 위치를 의미)
+  5. 엔터 치면 라이센스 어쩌고~ 엔터 후 q를 누르면 맨 밑으로 가짐.
+      **Do you accept the license terms? [yes|no]** 창이 뜨면 yes
+  6. 성공 했다면 `/home/ubuntu/miniconda3 >>>` 이런식으로 경로가 홈으로 설정 되있는 모습을 확인 할 수 있다. 엔터
+  7. ** You can undo this by running `conda init --reverse $SHELL? [yes no]**
+      -> 아나콘다를 자동으로 활성화 할건지? yes 하면 기본 파이썬이 이번 설치한 아나콘다 환경으로 세팅됨. yes
+     
     
   
