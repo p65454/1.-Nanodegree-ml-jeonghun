@@ -2,7 +2,7 @@
 
 ## :computer: 구글 클라우드 플랫폼(GCP) 개발 환경 구축
 
-  #### :page_with_curl: 필요한 사전 지식 간단히 정리  
+  ### :page_with_curl: 필요한 사전 지식 간단히 정리  
     * 호스트 : 네트워크 연결된 컴퓨터
     * 인스턴스 : 클라우드 서버 컴퓨터
     * 가상머신 : 가상화 한 컴퓨터
@@ -10,7 +10,7 @@
     * 포트번호 : 통신해서 컴퓨터 내 프로그램 찾기위한 번호
     * shell : 터미널
     
-  #### :wrench: 사용할 기능
+  ### :wrench: 사용할 기능
     1. Compute Engine : 서버 컴퓨터 환경 구축
     2. Cloud SQL : 데이터베이스 구축
     3. Cloud Run : 컨테이너 여러개 띄워서 로드를 분산시켜줌. 무중단배포, 로드밸런싱(트래픽을 균등하게 나눠서 배포) 기능
@@ -18,7 +18,7 @@
     
   * ## **가입 하면 3개월간 300달러 무료(20240319 ~ 2024618)**
   
-  #### :exclamation: 인스턴스 만들 때 참고
+  ### :exclamation: 인스턴스 만들 때 참고
     * 인스턴스를 만들 때는 가격과 목적을 고려해서 적절히 세팅하자.
     * 리전, 영역 : 서울로 설정(외국보다 속도 빠름)
     * 가용성 정책 (VM 프로비저닝 모델)
@@ -31,7 +31,7 @@
     * 사용 안할 때는 VM인스턴스 창에서 '정지' 상태로 바꿔놓자 크레딧 낭비
     * 브라우저에서 연결하는 법 : VM인스턴스에서 오른쪽 연결에서 SSH 클릭
     
-  #### :pushpin: SSH키 등록 (<https://cloud.google.com/compute/docs/connect/create-ssh-keys>)
+  ### :pushpin: SSH키 등록 (<https://cloud.google.com/compute/docs/connect/create-ssh-keys>)
   요청을 보낼 때 비밀키로 어떤 값을 암호화해서 서버에 전달 한 다음 서버에 등록되어 있는 공개키(.pub)로 복호화 해서 열어주는 원리
     
   -> 공개키를 서버에 등록해야함
@@ -41,7 +41,7 @@
   3. 퍼블릭 키 출력해서 확인 : `cat {키파일명.pub}`
   4. 암호 복사한 다음 Compute Engine - 설정 - 메타데이터 - SSH키 - 항목추가 에 붙여넣기
     
-  #### :pushpin: SSH 접속
+  ### :pushpin: SSH 접속
   1. VM인스턴스 탭에서 외부IP 복사
   2. `ssh -i C:/Users/jeonghun/first-ssh-key(공개키의 위치) ubuntu@xxx.xxx.xxx.xxx(외부ip)`
   3. 접속이 됐다면 이제 Linux가 된거고 `cd ~/.ssh` -> `cat authorized_keys` 로 등록된 ssh키 확인 가능
