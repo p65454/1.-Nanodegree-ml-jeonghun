@@ -58,27 +58,34 @@
 
 ## 2. 파이썬 환경 셋팅
 
-  1. miniconda 설치하기 <https://docs.anaconda.com/free/miniconda/>     
+  1. vscode 좌측 원격탐색기 - SSH 옆 + 클릭 - `ssh -i C:/Users/jeonghun/first-ssh-key(공개키의 위치) ubuntu@xxx.xxx.xxx.xxx(외부ip)` - /{홈 경로}/.ssh/config 로 설정
+
+  2. miniconda 설치하기 <https://docs.anaconda.com/free/miniconda/>     
      접속 후 **Linux Miniconda3 Linux 64-bit** 마우스 우클릭 후 링크 복사
      
-  2. vs code 에서 'Ctrl + J' 해서 터미널창 킨 후 `wget {링크}` 입력하면 설치된다
+  3. vs code 에서 'Ctrl + J' 해서 터미널창 킨 후 `wget {링크}` 입력하면 설치된다
      
-  3. `bash ./Miniconda3-latest-Linux-x86_64.sh`
+  4. `bash ./Miniconda3-latest-Linux-x86_64.sh`
       -> bashell 쉘을 켜서 뒤의 프로그램을 실행시키는 명령어 (맨 앞의 .은 현재 위치를 의미)
      
-  4. 엔터 치면 라이센스 어쩌고~ 엔터 후 q를 누르면 맨 밑으로 가짐.
+  5. 엔터 치면 라이센스 어쩌고~ 엔터 후 q를 누르면 맨 밑으로 가짐.
       **Do you accept the license terms? [yes|no]** 창이 뜨면 yes
      
-  5. 성공 했다면 `/home/ubuntu/miniconda3 >>>` 이런식으로 경로가 홈으로 설정 되있는 모습을 확인 할 수 있다. 엔터
+  6. 성공 했다면 `/home/ubuntu/miniconda3 >>>` 이런식으로 경로가 홈으로 설정 되있는 모습을 확인 할 수 있다. 엔터
    
-  6. **You can undo this by running `conda init --reverse $SHELL? [yes no]**
+  7. **You can undo this by running `conda init --reverse $SHELL? [yes no]**
       -> 아나콘다를 자동으로 활성화 할건지? yes 하면 기본 파이썬이 이번 설치한 아나콘다 환경으로 세팅됨. yes
 
-  7. 껐다 키면 활성화 된다. `exit` 후 `Ctrl + J` 하자
+  8. 껐다 키면 활성화 된다. `exit` 후 `Ctrl + J` 하자
     
-  8. mle_course 라는 가상환경 만들기 :  `conda create --name mle_course python=3.11`
+  9. mle_course 라는 가상환경 만들기 :  `conda create --name mle_course python=3.11`
 
-  9. 가상환경 활성화 : `conda activate mle_course`
+  10. 가상환경 활성화 : `conda activate mle_course`
      
-    
-  
+  11. Poetry(아나콘다에서 꼬이는 의존성을 해결해주는 툴) 설치 : `conda install poetry`
+
+  12. 프로젝트 생성 : `mkdir ml_basic` -> `cd ml_basic` -> `poetry init` -> `poetry add numpy` 명령어로 라이브러리 설치 가능
+
+  13. vscode 좌측 탐색기 - 폴더열기 - ml_basic 클릭 후 확인
+
+  14. Ctrl + Shift + p 눌러서 파이썬 인터프리터를 방금 만든 mle_course로 선택
