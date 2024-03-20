@@ -36,9 +36,11 @@
     
   -> 공개키를 서버에 등록해야함
   
-    1. window 키 등록 명령어 : ssh-keygen -t rsa -f C:\Users\사용자명\.ssh\파일명 -C 코멘트 -b 2048
+    1. window 키 등록 명령어 : ssh-keygen -t rsa -f C:\Users\{사용자명}\.ssh\{파일명} -C {코멘트} -b 2048
     2. 키파일 있는 곳으로 이동 : cd {키파일 위치}
     3. 퍼블릭 키 출력해서 확인 : cat {키파일명.pub}
     4. 암호 복사한 다음 Compute Engine - 설정 - 메타데이터 - SSH키 - 항목추가 에 붙여넣기
     
-    
+  #### SSH 접속
+  1. VM인스턴스 탭에서 외부IP 복사
+  2. `ssh -i C:/Users/jeonghun/first-ssh-key(공개키의 위치) ubuntu@xxx.xxx.xxx.xxx(외부ip)`
