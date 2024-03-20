@@ -47,9 +47,9 @@
   3. 접속이 됐다면 이제 Linux가 된거고 `cd ~/.ssh` -> `cat authorized_keys` 로 등록된 ssh키 확인 가능
 
 
-  ##2. 파이썬 환경 셋팅
-    1. miniconda 설치하기 <https://docs.anaconda.com/free/miniconda/>     
-    접속 후 **Linux Miniconda3 Linux 64-bit** 마우스 우클릭 후 링크 복사    
-    2. 터미널 창에 `wget {링크}` 하면 설치됨
+##2. 파이썬 환경 셋팅
+  1. miniconda 설치하기 <https://docs.anaconda.com/free/miniconda/>     
+     접속 후 **Linux Miniconda3 Linux 64-bit** 마우스 우클릭 후 링크 복사    
+  2. 터미널 창에 `wget {링크}` 하면 설치됨
     
   
