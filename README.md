@@ -81,7 +81,7 @@
      
   6. 성공 했다면 `/home/ubuntu/miniconda3 >>>` 이런식으로 경로가 홈으로 설정 되있는 모습을 확인 할 수 있다. 엔터
    
-  7. **You can undo this by running `conda init --reverse $SHELL? [yes no]**
+  7. **You can undo this by running `conda init --reverse $SHELL? [yes no]**     
       -> 아나콘다를 자동으로 활성화 할건지? yes 하면 기본 파이썬이 이번 설치한 아나콘다 환경으로 세팅됨. yes
 
   8. 껐다 키면 활성화 된다. `exit` 후 `Ctrl + J` 하자
