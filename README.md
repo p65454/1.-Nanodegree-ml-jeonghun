@@ -32,4 +32,4 @@
     * 브라우저에서 연결하는 법 : VM인스턴스에서 오른쪽 연결에서 SSH 클릭
     
   #### SSH키 등록 (<https://cloud.google.com/compute/docs/connect/create-ssh-keys>)
-    *
+    * 'ssh-keygen -t rsa -f C:\Users\WINDOWS_USER\.ssh\KEY_FILENAME -C USERNAME -b 2048'
