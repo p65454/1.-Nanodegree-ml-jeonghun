@@ -48,7 +48,8 @@
 
 
   ##2. 파이썬 환경 셋팅
-    1. miniconda 설치하기 <https://docs.anaconda.com/free/miniconda/>     접속 후 **Linux Miniconda3 Linux 64-bit** 마우스 우클릭 후 링크 복사    
+    1. miniconda 설치하기 <https://docs.anaconda.com/free/miniconda/>     
+    접속 후 **Linux Miniconda3 Linux 64-bit** 마우스 우클릭 후 링크 복사    
     2. 터미널 창에 `wget {링크}` 하면 설치됨
     
   
