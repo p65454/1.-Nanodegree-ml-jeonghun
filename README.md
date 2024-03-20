@@ -35,7 +35,7 @@
     * 사용 안할 때는 VM인스턴스 창에서 '정지' 상태로 바꿔놓자 크레딧 낭비
     * 브라우저에서 연결하는 법 : VM인스턴스에서 오른쪽 연결에서 SSH 클릭
   <br />  
-  ### :pushpin: SSH키 등록 (<https://cloud.google.com/compute/docs/connect/create-ssh-keys>)
+  ### :pushpin: SSH키 등록 <https://cloud.google.com/compute/docs/connect/create-ssh-keys>
   요청을 보낼 때 비밀키로 어떤 값을 암호화해서 서버에 전달 한 다음 서버에 등록되어 있는 공개키(.pub)로 복호화 해서 열어주는 원리
     
   -> 공개키를 서버에 등록해야함
