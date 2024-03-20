@@ -1,6 +1,6 @@
 # 1회차(3월19일 화) VOD 정리
 
-## :computer: 구글 클라우드 플랫폼(GCP) 개발 환경 구축
+## 1. 구글 클라우드 플랫폼(GCP) 개발 환경 구축
 
   ### :page_with_curl: 필요한 사전 지식 간단히 정리  
     * 호스트 : 네트워크 연결된 컴퓨터
@@ -45,3 +45,10 @@
   1. VM인스턴스 탭에서 외부IP 복사
   2. `ssh -i C:/Users/jeonghun/first-ssh-key(공개키의 위치) ubuntu@xxx.xxx.xxx.xxx(외부ip)`
   3. 접속이 됐다면 이제 Linux가 된거고 `cd ~/.ssh` -> `cat authorized_keys` 로 등록된 ssh키 확인 가능
+
+
+  ##2. 파이썬 환경 셋팅
+    1. miniconda 설치하기 <https://docs.anaconda.com/free/miniconda/> 접속 후 **Linux Miniconda3 Linux 64-bit** 마우스 우클릭 후 링크 복사
+    2. 터미널 창에 `wget {링크}` 하면 설치됨
+    
+  
